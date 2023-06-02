@@ -1,0 +1,187 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Dosis';
+}
+body{
+    background-color: #f7f6f3;
+}
+a{
+    text-decoration: none;
+    color: #1d1d1d;
+}
+.navbar{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 0px;
+}
+.left .logo{
+    font-weight: 900;
+    font-size: 2rem;
+}
+.navbar .right{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    transition: all 0.3s ease-in-out;
+}
+.right .navitems{
+    margin-left: 3rem;
+    font-size: 1.1rem;
+    position:  relative;
+    cursor: pointer;
+}
+
+.right #home::before{
+    width: 50%;
+    
+}
+.right #home:hover::before{
+    width: 100%;
+}
+.right .navitems::before{
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    height: 3px;
+    width: 0;
+    background: #3484b3;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+.navitems:hover::before{
+    width: 100%;
+}
+
+.main{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    height: 80vh;
+    position: relative;
+}
+.main .textsection{
+    width: 55%;
+}
+.main .textsection .tagline{
+    font-size: 3rem;
+}
+.textsection .text{
+    font-size: 1.5rem;
+    line-height: 35px;
+    
+}
+.main .imagesection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    position: relative;
+}
+.imagesection .mainimage{
+    position: absolute;
+}
+.underline{
+    background-image: linear-gradient(90deg, red, blue);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    transition: background-size 0.3s ease;
+}
+.underline:hover{
+    background-size: 100% 3px;
+}
+.skcolor{
+    color: #ffc14e;
+    font-weight: bold;
+}
+.iconlinks{
+    margin-top: 20px;
+    width: 50%;
+}
+.icon{
+    width: 10%;
+    margin-right: 20px;
+    display: inline;
+    cursor: pointer;
+}
+.scroll{
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+
+.workcontainer{
+    width: 80%;
+    margin: auto;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.heading{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    margin-bottom: 50px;
+    font-family: 'Asap';
+}
+.work .card{
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.card .image{
+    width: 55%;
+}
+.card .image .mockupimg{
+    z-index: 10;
+}
+.card .text{
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 28px;
+    width: 40%;
+}
+.card .text .techstack{
+    margin-top: 8px;
+    color: blue;
+    font-weight: bold;
+}
+.techstack .visitbtn{
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    color: #fff;
+    letter-spacing: 3px;
+    border-radius: 15px;
+    margin-top: 15px;
+    background-color: #9c88ce;
+    box-shadow: 5px 5px 0px #57575c;
+    transition: all 0.3s ease;
+}
+.visitbtn:hover{
+    background-color: #9173dd;
+    box-shadow: none;
+    cursor: pointer;
+}
+.card .text .textheading{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+.card .mockupimg{
+    width: 100%;
+}
